@@ -1,2 +1,2 @@
 # oshawhut.github.io
-Static HTML Resume
+Static HTML Resume for IT431
