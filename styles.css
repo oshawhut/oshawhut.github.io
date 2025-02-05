@@ -1,29 +1,110 @@
-/* Nav Bar */
-ul {
-	list-style-type: none;
+/* General Styling */
+body {
+	font-family: "Poppins", sans-serif;
+	background-color: #f8f0e3; /* Soft beige */
 	margin: 0;
 	padding: 0;
-	overflow: hidden;
-	background-color: #333;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+
+	/* Polka Dot hehe */
+	background-image: radial-gradient(#fafafa 20%, transparent 20%),
+		radial-gradient(#fafafa 20%, transparent 20%);
+	background-position: 0 0, 50px 50px;
+	background-size: 100px 100px;
 }
 
-li {
-	float: left;
-}
-
-li a {
-	display: block;
-	color: white;
+/* Centered Content */
+.container {
+	width: 60%;
+	max-width: 800px;
+	background: white;
+	padding: 20px;
+	border-radius: 15px;
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 	text-align: center;
-	padding: 14px 16px;
+}
+
+/* Name & Title */
+h1 {
+	font-size: 2rem;
+	color: #333;
+	margin-bottom: 5px;
+}
+
+h2 {
+	font-size: 1.5rem;
+	color: #555;
+	font-style: italic;
+}
+
+/* Navigation Bar */
+#navbar {
+	list-style-type: none;
+	padding: 0;
+	background-color: #ffb6c1;
+	border-radius: 10px;
+	display: flex;
+	justify-content: center;
+	gap: 10px;
+	margin-bottom: 20px;
+}
+
+#navbar li {
+	display: inline;
+}
+
+#navbar li a {
+	display: inline-block;
+	color: #ff85a2;
+	padding: 12px 18px;
+	border-radius: 8px;
 	text-decoration: none;
+	font-weight: bold;
+	transition: all 0.3s ease-in-out;
 }
 
-/* Change the link color to #111 (black) on hover */
-li a:hover {
-	background-color: #111;
+#navbar li a:hover {
+	color: #ff4d6d;
 }
 
-.active {
-	background-color: #04aa6d;
+#navbar .active {
+	color: #ff4d6d;
+}
+
+/* Section Headers */
+h4,
+h3 {
+	color: #ff4d6d;
+}
+h4 {
+	font-style: italic;
+}
+
+/* Lists */
+ul {
+	list-style-type: none;
+	padding: 0;
+	text-align: left;
+}
+
+ul li {
+	background: #fff4f7; /* Light pink */
+	padding: 10px;
+	margin: 5px 0;
+	border-radius: 8px;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Contact Info */
+p a {
+	color: #ff4d6d;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+p a:hover {
+	text-decoration: underline;
 }
